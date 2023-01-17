@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!-- thymeleafを使用します
+     動的な部分をHTMLの属性で記述-->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>確認画面</title>
+</head>
+<body>
+  <h2>入力情報を確認して登録ボタンを押してください</h2>
+  <!-- ${式}で値を出力できる -->
+  名前：<strong th:text="${rb.name}"></strong><br/>
+  年齢：<strong th:text="${rb.age}"></strong><br/><br/>
+<input type ="submit" value="登録" />
+<input type ="reset" value="戻る" />
+</body>
+</html>
